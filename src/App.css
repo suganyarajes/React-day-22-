@@ -1,0 +1,78 @@
+/* App.css */
+
+section {
+  text-align: center;
+  padding: 30px;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(8, 96, 211);
+  margin-top: 70px;
+}
+
+.pricingCard {
+  border: 2px solid #333 ;
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 20px 30px 20px 30px;
+  max-width: 300px;
+  border-radius: 10px;
+
+  
+}
+ 
+
+
+h2 {
+  color: #333;
+}
+
+h1 {
+  color: #121414;
+}
+h5{
+  color:  rgb(201, 198, 198);
+
+}
+
+.checkedItem,
+.uncheckedItem {
+  list-style-type: none;
+  margin-bottom: 5px;
+  display: flex;
+  
+ 
+}
+.checkedItem i,
+.uncheckedItem i {
+  margin-right: 8px;
+  font-size: 16px; 
+  
+}
+
+.checkedItem {
+  color: hsl(180, 4%, 16%);
+  
+}
+
+.uncheckedItem {
+
+  color: rgb(163, 160, 160);
+  
+  
+  
+}
+
+.space{
+
+margin-top: 30px;
+margin-bottom: 30px;
+border-top: rgb(228, 224, 224) solid ;
+}
+
+
+
