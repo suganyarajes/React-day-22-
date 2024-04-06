@@ -183,6 +183,16 @@ ul {
     margin: 0 auto;
     text-align: center;
   }
+  
+.box {
+  background-color: rgb(8, 96, 211);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  justify-content: center;
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -199,6 +209,16 @@ ul {
     margin: 0 auto;
     text-align: center;
   }
+  
+.box {
+  background-color: rgb(8, 96, 211);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  justify-content: center;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -215,6 +235,16 @@ ul {
     margin: 0 auto;
     text-align: center;
   }
+  
+.box {
+  background-color: rgb(8, 96, 211);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  justify-content: center;
+}
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -231,6 +261,16 @@ ul {
     margin: 0 auto;
     text-align: center;
   }
+  
+.box {
+  background-color: rgb(8, 96, 211);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  justify-content: center;
+}
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -247,4 +287,14 @@ ul {
     margin: 0 auto;
     text-align: center;
   }
+  
+.box {
+  background-color: rgb(8, 96, 211);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  justify-content: center;
+}
 }
