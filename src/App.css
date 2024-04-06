@@ -226,7 +226,7 @@ ul {
   .uncheckedItem {
     display: inline; /* Display list items inline */
     margin-right: 10px; /* Add some spacing between items */
-    font-size: smaller;
+   
   }
 
   .checkedItem i,
@@ -234,7 +234,7 @@ ul {
     display: inline; /* Display icons inline */
     margin-right: 5px; /* Add some spacing between icon and text */
     vertical-align: middle; /* Align the icon vertically with the text */
-    font-size: smaller;}
+    }
 
   .centerButton {
     display: block;
@@ -296,7 +296,7 @@ ul {
   .uncheckedItem {
     display: inline; /* Display list items inline */
     margin-right: 10px; /* Add some spacing between items */
-    font-size: smaller;
+    
   }
 
   .checkedItem i,
@@ -304,7 +304,7 @@ ul {
     display: inline; /* Display icons inline */
     margin-right: 5px; /* Add some spacing between icon and text */
     vertical-align: middle; /* Align the icon vertically with the text */
-    font-size: smaller;}
+   }
 
   .centerButton {
     display: block;
@@ -366,7 +366,7 @@ ul {
   .uncheckedItem {
     display: inline; /* Display list items inline */
     margin-right: 10px; /* Add some spacing between items */
-    font-size: smaller;
+    ;
   }
 
   .checkedItem i,
@@ -374,7 +374,7 @@ ul {
     display: inline; /* Display icons inline */
     margin-right: 5px; /* Add some spacing between icon and text */
     vertical-align: middle; /* Align the icon vertically with the text */
-    font-size: smaller;}
+   }
 
   .centerButton {
     display: block;
@@ -422,7 +422,7 @@ ul {
     display: inline-block;
     flex-direction: column;
     padding: 2px 2px 2px 2px;
-    box-sizing: content-box
+    box-sizing: content-box;
   }
 
   ul {
@@ -436,7 +436,7 @@ ul {
   .uncheckedItem {
     display: inline; /* Display list items inline */
     margin-right: 10px; /* Add some spacing between items */
-    font-size: smaller;
+   
   }
 
   .checkedItem i,
@@ -444,7 +444,7 @@ ul {
     display: inline; /* Display icons inline */
     margin-right: 5px; /* Add some spacing between icon and text */
     vertical-align: middle; /* Align the icon vertically with the text */
-    font-size: smaller;}
+   }
 
   .centerButton {
     display: block;
@@ -506,7 +506,7 @@ ul {
   .uncheckedItem {
     display: inline; /* Display list items inline */
     margin-right: 10px; /* Add some spacing between items */
-    font-size: smaller;
+   
   }
 
   .checkedItem i,
@@ -514,7 +514,7 @@ ul {
     display: inline; /* Display icons inline */
     margin-right: 5px; /* Add some spacing between icon and text */
     vertical-align: middle; /* Align the icon vertically with the text */
-    font-size: smaller;}
+    }
 
   .centerButton {
     display: block;
