@@ -18,7 +18,6 @@ const data=[{
  "Free Subdomain",
  "Monthly Status Reports"]
 
-
 },
 
 {
@@ -46,14 +45,15 @@ const data=[{
  "Free Subdomain",
  "Monthly Status Reports"],
  unchecks:[]
+
 },
 
 ];
 
   return (
-    <section>
-      <h1>REACT PRICE CARD</h1>
     <div className="container">
+      <h1>REACT PRICE CARD</h1>
+    <div className="box">
        
             
             {data.map((dataItem, index) =>(<PricingCard 
@@ -63,10 +63,13 @@ const data=[{
               checks={dataItem.checks} 
               unchecks={dataItem.unchecks}
               />
-           
+              
              ))};
+             
+
          </div>
-</section>
+         
+</div>
   );
            
 };
