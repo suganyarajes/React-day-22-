@@ -1,9 +1,10 @@
 
-
+import React from 'react';
+import PropTypes from "prop-types";
 
 
 function PricingCard(props){
-
+console.log(props)
     
 return(
 <div className="pricingCard">
@@ -11,7 +12,7 @@ return(
     <h2>{props.price}</h2>
     
     
-    <div className="space">
+    <div className="content">
         
         <ul>
 
@@ -30,7 +31,7 @@ return(
       
       {props.unchecks.length > 0 && (
         
-         <div> 
+        
           <ul>
 
             {props.unchecks.map((item, index) => (
@@ -45,13 +46,13 @@ return(
  ))}
          </ul>
          
-       </div>
+    
       )}
     
-</div>
-<button type="button" className="btn btn-primary btn-lg btn-block">button</button>
-    </div>
+    <button type="button" className="btn btn-primary btn-lg btn-block centerButton">button</button>
 
+    </div>
+    </div>
    
 
 
@@ -61,3 +62,12 @@ return(
 
 
 export default PricingCard;
+
+
+//PropTypes validation
+PricingCard.proTypes={
+  title:PropTypes.string.isRequired,
+  price:PropTypes.string.isRequired,
+  checks:PropTypes.arrayOf(PropTypes.string).isRequired,
+  unchecks:PropTypes.arrayOf(PropTypes.string).isRequired
+};
