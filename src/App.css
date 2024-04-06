@@ -1,78 +1,250 @@
 /* App.css */
-
-section {
-  text-align: center;
-  padding: 30px;
+*, ::after, ::before {
+  box-sizing: border-box;
 }
 
-
+div {
+  padding: 30px;
+  margin: 0;
+  display: block;
+}
 
 .container {
-  display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+  display: inline;
+}
+
+.box {
   background-color: rgb(8, 96, 211);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 70px;
+  justify-content: center;
 }
 
 .pricingCard {
-  border: 2px solid #333 ;
+  border: 2px solid #333;
   background-color: aliceblue;
   padding: 20px;
   margin: 20px 30px 20px 30px;
-  max-width: 300px;
   border-radius: 10px;
-
-  
+  box-sizing: border-box;
 }
- 
-
 
 h2 {
   color: #333;
+  text-align: center;
 }
 
 h1 {
   color: #121414;
+  text-align: center;
 }
-h5{
-  color:  rgb(201, 198, 198);
 
+h5 {
+  color: rgb(201, 198, 198);
+  text-align: center;
 }
 
 .checkedItem,
 .uncheckedItem {
   list-style-type: none;
-  margin-bottom: 5px;
-  display: flex;
-  
- 
+  margin-bottom: 2px;
+  text-align: start;
 }
+
 .checkedItem i,
 .uncheckedItem i {
   margin-right: 8px;
-  font-size: 16px; 
-  
+  font-size: 16px;
+  text-align: start;
 }
 
 .checkedItem {
   color: hsl(180, 4%, 16%);
-  
+  text-align: start;
+  margin: 0;
 }
 
 .uncheckedItem {
-
   color: rgb(163, 160, 160);
-  
-  
-  
+  text-align: start;
+  margin: 0;
 }
 
-.space{
-
-margin-top: 30px;
-margin-bottom: 30px;
-border-top: rgb(228, 224, 224) solid ;
+.content {
+  text-align: start;
+  margin-top: 30px;
+  border-top: rgb(228, 224, 224) solid;
 }
 
+ul {
+  text-align: left;
+}
+.centerButton {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Media Queries */
+
+/* Small devices (landscape phones, up to 400px) */
+@media (max-width: 400px) {
+  .container {
+    display: block; /* Change display to block for full width */
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    font-size: smaller;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+  .box {
+    background-color: rgb(8, 96, 211);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    justify-content: center;
+    
+  }
+  .pricingCard {
+    display: inline-block; /* Make the pricing card inline-block */
+    margin: 20px 0; /* Adjust margin */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    width: 100%; /* Default width */
+  }
 
 
+  .content {
+    
+    margin-top: 30px;
+    border-top: rgb(228, 224, 224) solid;
+    text-align: center; /* Center-align the content */
+    font-size:xx-small;
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    padding: 2px 2px 2px 2px;
+    box-sizing: content-box
+  }
+
+  ul {
+    display: inline-block; /* Make list items inline-block */
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .checkedItem,
+  .uncheckedItem {
+    display: inline; /* Display list items inline */
+    margin-right: 10px; /* Add some spacing between items */
+    font-size: smaller;
+  }
+
+  .checkedItem i,
+  .uncheckedItem i {
+    display: inline; /* Display icons inline */
+    margin-right: 5px; /* Add some spacing between icon and text */
+    vertical-align: middle; /* Align the icon vertically with the text */
+    font-size: smaller;}
+
+  .centerButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+    max-width: 540px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .centerButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .centerButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .centerButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .centerButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .centerButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
