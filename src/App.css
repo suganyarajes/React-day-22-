@@ -56,6 +56,7 @@ h5 {
   list-style-type: none;
   margin-bottom: 2px;
   text-align: start;
+
 }
 
 .checkedItem i,
@@ -63,10 +64,11 @@ h5 {
   margin-right: 8px;
   font-size: 16px;
   text-align: start;
+
 }
 
 .checkedItem {
-  color: hsl(180, 4%, 16%);
+  color: hsl(180, 3%, 7%);
   text-align: start;
   margin: 0;
 }
@@ -90,11 +92,14 @@ ul {
   display: block;
   margin: 0 auto;
   text-align: center;
+  color: aliceblue;
+  background-color: rgb(8, 96, 211);
 }
-/* Media Queries */
 
-/* Small devices (landscape phones, up to 400px) */
-@media (max-width: 400px) {
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+ 
   .container {
     display: block; /* Change display to block for full width */
     width: 100%;
@@ -105,52 +110,61 @@ ul {
   *, ::after, ::before {
     box-sizing: border-box;
   }
-  div {
-    padding: 30px;
-    margin: 0;
-    display: block;
-  }
   .box {
-    background-color: rgb(8, 96, 211);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    justify-content: center;
+      background-color: rgb(8, 96, 211);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 70px;
+      justify-content: center;
+    }
     
-  }
-  .pricingCard {
-    display: inline-block; /* Make the pricing card inline-block */
-    margin: 20px 0; /* Adjust margin */
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #333;
-    background-color: aliceblue;
-    box-sizing: border-box;
-    width: 100%; /* Default width */
-  }
+    div {
+      padding: 30px;
+      margin: 0;
+      display: block;
+    }
+    .box {
+      background-color: rgb(8, 96, 211);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 70px;
+      justify-content: center;
+      min-width: 100%;
 
-
-  .content {
+      
+    }
+    .pricingCard {
+      display: inline-block; /* Make the pricing card inline-block */
+      margin: 20px 0; /* Adjust margin */
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #333;
+      background-color: aliceblue;
+      box-sizing: border-box;
+      width: 100%; /* Default width */
+    }
+    .content {
     
-    margin-top: 30px;
-    border-top: rgb(228, 224, 224) solid;
-    text-align: center; /* Center-align the content */
-    font-size:xx-small;
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    padding: 2px 2px 2px 2px;
-    box-sizing: content-box
-  }
-
-  ul {
-    display: inline-block; /* Make list items inline-block */
-    margin: 0;
-    padding: 0;
-
-  }
-
+      margin-top: 30px;
+      border-top: rgb(228, 224, 224) solid;
+      text-align: center; /* Center-align the content */
+      font-size:xx-small;
+      display: flex;
+      display: inline-block;
+      flex-direction: column;
+      padding: 2px 2px 2px 2px;
+      box-sizing: content-box
+    }
+    ul {
+      display: inline-block; /* Make list items inline-block */
+      margin: 0;
+      padding: 0;
+  
+    }
+    
   .checkedItem,
   .uncheckedItem {
     display: inline; /* Display list items inline */
@@ -169,357 +183,8 @@ ul {
     display: block;
     margin: 0 auto;
     text-align: center;
+    color: aliceblue;
+    background-color: rgb(8, 96, 211);
   }
  
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .container {
-    width: 100%;
-    max-width: 540px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  div {
-    padding: 30px;
-    margin: 0;
-    display: block;
-  }
-  .box {
-    background-color: rgb(8, 96, 211);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    justify-content: center;
-    
-  }
-  .content {
-    
-    margin-top: 30px;
-    border-top: rgb(228, 224, 224) solid;
-    text-align: center; /* Center-align the content */
-    font-size:xx-small;
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    padding: 2px 2px 2px 2px;
-    box-sizing: content-box
-  }
-
-  ul {
-    display: inline-block; /* Make list items inline-block */
-    margin: 0;
-    padding: 0;
-
-  }
-
-  .checkedItem,
-  .uncheckedItem {
-    display: inline; /* Display list items inline */
-    margin-right: 10px; /* Add some spacing between items */
-   
-  }
-
-  .checkedItem i,
-  .uncheckedItem i {
-    display: inline; /* Display icons inline */
-    margin-right: 5px; /* Add some spacing between icon and text */
-    vertical-align: middle; /* Align the icon vertically with the text */
     }
-
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
- 
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  div {
-    padding: 30px;
-    margin: 0;
-    display: block;
-  }
-  .box {
-    background-color: rgb(8, 96, 211);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    justify-content: center;
-    
-  }
-  .content {
-    
-    margin-top: 30px;
-    border-top: rgb(228, 224, 224) solid;
-    text-align: center; /* Center-align the content */
-    font-size:xx-small;
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    padding: 2px 2px 2px 2px;
-    box-sizing: content-box
-  }
-
-  ul {
-    display: inline-block; /* Make list items inline-block */
-    margin: 0;
-    padding: 0;
-
-  }
-
-  .checkedItem,
-  .uncheckedItem {
-    display: inline; /* Display list items inline */
-    margin-right: 10px; /* Add some spacing between items */
-    
-  }
-
-  .checkedItem i,
-  .uncheckedItem i {
-    display: inline; /* Display icons inline */
-    margin-right: 5px; /* Add some spacing between icon and text */
-    vertical-align: middle; /* Align the icon vertically with the text */
-   }
-
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
- 
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  div {
-    padding: 30px;
-    margin: 0;
-    display: block;
-  }
-  .box {
-    background-color: rgb(8, 96, 211);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    justify-content: center;
-    
-  }
-  .content {
-    
-    margin-top: 30px;
-    border-top: rgb(228, 224, 224) solid;
-    text-align: center; /* Center-align the content */
-    font-size:xx-small;
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    padding: 2px 2px 2px 2px;
-    box-sizing: content-box
-  }
-
-  ul {
-    display: inline-block; /* Make list items inline-block */
-    margin: 0;
-    padding: 0;
-
-  }
-
-  .checkedItem,
-  .uncheckedItem {
-    display: inline; /* Display list items inline */
-    margin-right: 10px; /* Add some spacing between items */
-    ;
-  }
-
-  .checkedItem i,
-  .uncheckedItem i {
-    display: inline; /* Display icons inline */
-    margin-right: 5px; /* Add some spacing between icon and text */
-    vertical-align: middle; /* Align the icon vertically with the text */
-   }
-
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
- 
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  div {
-    padding: 30px;
-    margin: 0;
-    display: block;
-  }
-  .box {
-    background-color: rgb(8, 96, 211);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    justify-content: center;
-    
-  }
-  .content {
-    
-    margin-top: 30px;
-    border-top: rgb(228, 224, 224) solid;
-    text-align: center; /* Center-align the content */
-    font-size:xx-small;
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    padding: 2px 2px 2px 2px;
-    box-sizing: content-box;
-  }
-
-  ul {
-    display: inline-block; /* Make list items inline-block */
-    margin: 0;
-    padding: 0;
-
-  }
-
-  .checkedItem,
-  .uncheckedItem {
-    display: inline; /* Display list items inline */
-    margin-right: 10px; /* Add some spacing between items */
-   
-  }
-
-  .checkedItem i,
-  .uncheckedItem i {
-    display: inline; /* Display icons inline */
-    margin-right: 5px; /* Add some spacing between icon and text */
-    vertical-align: middle; /* Align the icon vertically with the text */
-   }
-
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
- 
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  div {
-    padding: 30px;
-    margin: 0;
-    display: block;
-  }
-  .box {
-    background-color: rgb(8, 96, 211);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    justify-content: center;
-    
-  }
-  .content {
-    
-    margin-top: 30px;
-    border-top: rgb(228, 224, 224) solid;
-    text-align: center; /* Center-align the content */
-    font-size:xx-small;
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    padding: 2px 2px 2px 2px;
-    box-sizing: content-box
-  }
-
-  ul {
-    display: inline-block; /* Make list items inline-block */
-    margin: 0;
-    padding: 0;
-
-  }
-
-  .checkedItem,
-  .uncheckedItem {
-    display: inline; /* Display list items inline */
-    margin-right: 10px; /* Add some spacing between items */
-   
-  }
-
-  .checkedItem i,
-  .uncheckedItem i {
-    display: inline; /* Display icons inline */
-    margin-right: 5px; /* Add some spacing between icon and text */
-    vertical-align: middle; /* Align the icon vertically with the text */
-    }
-
-  .centerButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
- 
-}
